@@ -1,0 +1,24 @@
+body {
+  background-color: #000080; /* Dark blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white; /* White text */
+  font-size: 72px; /* Large font size */
+  text-align: center;
+}
+
+/* Font fallback (replace with font service embed code if using) */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../fonts/Minecraft.ttf') format('truetype'); /* Update path if self-hosting */
+}
+
+body {
+  font-family: Minecraft, sans-serif; /* Use Minecraft font, fallback to sans-serif */
+}
