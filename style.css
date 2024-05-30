@@ -16,7 +16,7 @@ h1 {
 /* Font fallback (replace with font service embed code if using) */
 @font-face {
   font-family: 'Minecraft';
-  src: url('../fonts/Minecraft.ttf') format('truetype'); /* Update path if self-hosting */
+  src: url('Minecraft.ttf') format('truetype'); /* Update path if self-hosting */
 }
 
 body {
