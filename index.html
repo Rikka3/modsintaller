@@ -38,14 +38,15 @@
       margin: 10px; /* Add spacing between boxes */
       border-radius: 10px; /* Adjust for desired curve */
       display: flex; /* Enable flexbox for text content */
-      justify-content: center; /* Center text horizontally */
-      align-items: center; /* Center text vertically */
+      flex-direction: column; /* Stack content vertically */
+      align-items: flex-start; /* Align content at top */
       color: #fff; /* Set text color to white */
     }
 
     .box p {
       font-size: 1.5em; /* Adjust font size for text */
-      text-align: center; /* Center text within box */
+      text-align: center; /* Center text horizontally within box */
+      margin-top: 10px; /* Add top margin for spacing */
     }
   </style>
 </head>
