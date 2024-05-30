@@ -42,6 +42,12 @@
       align-items: center; /* Center content horizontally and vertically */
       color: #fff; /* Text color */
       cursor: pointer; /* Set cursor to pointer on hover (indicates clickable) */
+      box-shadow: 0 0 0 2px transparent; /* Default box shadow (no outline) */
+      transition: box-shadow 0.2s ease-in-out; /* Add smooth transition for hover effect */
+    }
+
+    .box:hover {
+      box-shadow: 0 0 0 2px white; /* White outline on hover */
     }
 
     .box p.title {
