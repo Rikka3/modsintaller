@@ -43,10 +43,14 @@
       color: #fff; /* Text color */
     }
 
-    .box p {
-      font-size: 1.5em; /* Adjust font size for text */
-      text-align: center; /* Center text horizontally within box */
-      margin-top: 10px; /* Add top margin for spacing */
+    .box p.title {
+      font-size: 1.5em; /* Adjust title font size */
+      margin-bottom: 10px; /* Add spacing between title and description */
+    }
+
+    .box p.description {
+      font-size: 1em; /* Adjust description font size (smaller than title) */
+      color: yellow; /* Set description text color to yellow */
     }
   </style>
 </head>
@@ -54,13 +58,16 @@
   <h1>Mods Installer</h1>
   <div class="box-container">
     <div class="box">
-      <p>Mods</p>
+      <p class="title">Mods</p>
+      <p class="description">Essential game modifications</p>
     </div>
     <div class="box">
-      <p>Optional Mods</p>
+      <p class="title">Optional Mods</p>
+      <p class="description">Enhance your gameplay (not required)</p>
     </div>
     <div class="box">
-      <p>Usage</p>
+      <p class="title">Usage</p>
+      <p class="description">Instructions on using the installer</p>
     </div>
   </div>
 </body>
