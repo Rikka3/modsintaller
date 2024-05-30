@@ -37,15 +37,30 @@
       background-color: #153254; /* Set box background color */
       margin: 10px; /* Add spacing between boxes */
       border-radius: 10px; /* Adjust for desired curve */
+      display: flex; /* Enable flexbox for text content */
+      justify-content: center; /* Center text horizontally */
+      align-items: center; /* Center text vertically */
+      color: #fff; /* Set text color to white */
+    }
+
+    .box p {
+      font-size: 1.5em; /* Adjust font size for text */
+      text-align: center; /* Center text within box */
     }
   </style>
 </head>
 <body>
   <h1>Mods Installer</h1>
   <div class="box-container">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">
+      <p>text1</p>
+    </div>
+    <div class="box">
+      <p>text2</p>
+    </div>
+    <div class="box">
+      <p>text3</p>
+    </div>
   </div>
 </body>
 </html>
