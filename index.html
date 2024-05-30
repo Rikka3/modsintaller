@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mods Installer</title>
   <style>
-    /* Set initial theme (dark mode) */
+    /* Set background color */
     body {
-      background-color: #398ae6; /* Dark mode background color */
+      background-color: #398ae6; /* Adjust background color as desired */
       font-family: 'Minecraft', sans-serif; /* Use Minecraft font for body */
-      color: #fff; /* Text color for dark mode */
+      color: #fff; /* Text color */
       display: flex; /* Enable flexbox for centering */
       flex-direction: column; /* Stack elements vertically */
       justify-content: center; /* Center content horizontally */
@@ -39,8 +39,8 @@
       border-radius: 10px; /* Adjust for desired curve */
       display: flex; /* Enable flexbox for text content */
       flex-direction: column; /* Stack content vertically */
-      align-items: flex-start; /* Align content at top */
-      color: #fff; /* Text color for dark mode */
+      align-items: center; /* Center content horizontally and vertically */
+      color: #fff; /* Text color */
     }
 
     .box p {
@@ -48,68 +48,20 @@
       text-align: center; /* Center text horizontally within box */
       margin-top: 10px; /* Add top margin for spacing */
     }
-
-    /* Light mode styles (initially hidden) */
-    .light-mode {
-      display: none; /* Initially hide light mode styles */
-    }
-
-    .light-mode body {
-      background-color: #fff; /* Light mode background color */
-      color: #000; /* Text color for light mode */
-    }
-
-    .light-mode .box {
-      background-color: #ddd; /* Light mode box background color */
-      color: #000; /* Text color for light mode in box */
-    }
-
-    /* Button styles */
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #398ae6; /* Dark mode button color */
-      color: #fff; /* Text color for dark mode button */
-      cursor: pointer;
-      position: fixed; /* Fix button to bottom */
-      bottom: 20px; /* Set distance from bottom */
-      left: 50%; /* Center button horizontally */
-      transform: translateX(-50%); /* Offset for centering */
-    }
-
-    .light-mode button {
-      background-color: #ddd; /* Light mode button color */
-      color: #000; /* Text color for light mode button */
-    }
   </style>
 </head>
 <body>
   <h1>Mods Installer</h1>
   <div class="box-container">
     <div class="box">
-      <p>text1</p>
+      <p>Mods</p>
     </div>
     <div class="box">
-      <p>text2</p>
+      <p>Optional Mods</p>
     </div>
     <div class="box">
-      <p>text3</p>
+      <p>Usage</p>
     </div>
   </div>
-  <button id="toggleTheme">Toggle Light/Dark Mode</button>
-  <script>
-    const toggleThemeButton = document.getElementById('toggleTheme');
-    const body = document.body
-    toggleThemeButton.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      if (body.classList.contains('light-mode')) {
-        toggleThemeButton.textContent = 'Toggle Light/Dark Mode (Light Mode)';
-      } else {
-        toggleThemeButton.textContent = 'Toggle Light/Dark Mode (Dark Mode)';
-      }
-    });
-  </script>
 </body>
 </html>
