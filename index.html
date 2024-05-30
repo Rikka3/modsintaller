@@ -11,7 +11,10 @@
       font-family: 'Minecraft', sans-serif; /* Use Minecraft font for body */
       color: #fff; /* Set text color to white for contrast */
       display: flex; /* Enable flexbox for centering */
+      flex-direction: column; /* Stack elements vertically */
       justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      min-height: 100vh; /* Set minimum body height for full viewport */
     }
 
     @font-face {
@@ -23,19 +26,26 @@
       font-size: 4em; /* Adjust font size as needed */
     }
 
+    .box-container {
+      display: flex; /* Enable flexbox for boxes */
+      justify-content: space-between; /* Distribute boxes horizontally */
+    }
+
     .box {
       width: 256px; /* Set box width */
       height: 256px; /* Set box height */
       background-color: #153254; /* Set box background color */
       margin: 10px; /* Add spacing between boxes */
-      border-radius: 50%; /* Add rounded corners */
+      border-radius: 10px; /* Adjust for desired curve */
     }
   </style>
 </head>
 <body>
   <h1>Mods Installer</h1>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
+  <div class="box-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
 </body>
 </html>
