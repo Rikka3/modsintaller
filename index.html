@@ -96,11 +96,11 @@
 <body>
   <h1>Mods Installer <span class="by-tubm">by Tubm</span></h1>
   <div class="box-container">
-    <div class="box">
+    <div class="box manmods">
       <p class="title">Mods</p>
       <p class="description">Essential game modifications</p>
     </div>
-    <div class="box">
+    <div class="box sidemods">
       <p class="title">Optional Mods</p>
       <p class="description">Enhance your gameplay</p>
       <p class="description">(not required)</p>
@@ -114,6 +114,16 @@
     <p>serverip</p>
   </div>
   <script>
+    const sidemods = document.querySelector('.usage-box');
+
+usageBox.addEventListener('click', function() {
+  window.location.href = "https://github.com/Rikka3/modsintaller/releases";
+});
+    const manmods = document.querySelector('.usage-box');
+
+usageBox.addEventListener('click', function() {
+  window.location.href = "https://github.com/Rikka3/modsintaller/releases";
+});
     const usageBox = document.querySelector('.usage-box');
 
 usageBox.addEventListener('click', function() {
