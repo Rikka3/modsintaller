@@ -78,7 +78,7 @@
     }
 
     .server-ip-box {
-      width: 100%; /* Set width to full container */
+      width: 300px; /* Set width to full container */
       height: 25px; /* Set small height for server IP box */
       background-color: #153254; /* Match background color of other boxes */
       margin: 10px 0; /* Add spacing above and
@@ -113,5 +113,19 @@
   <div class="server-ip-box">
     <p>serverip</p>
   </div>
+  <script>
+    const serverIpBox = document.querySelector('.server-ip-box');
+  
+    serverIpBox.addEventListener('click', function() {
+      navigator.clipboard.writeText('serverip')
+        .then(() => {
+          console.log('Server IP copied to clipboard!');
+        })
+        .catch(err => {
+          console.error('Failed to copy server IP:', err);
+        });
+    });
+  </script>
+  
 </body>
 </html>
