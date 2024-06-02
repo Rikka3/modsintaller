@@ -46,12 +46,11 @@
     .box-container {
       display: flex; /* Enable flexbox for boxes */
       justify-content: space-between; /* Distribute boxes horizontally */
-      flex-wrap: wrap; /* Allow boxes to wrap to next line if needed */
     }
 
     .box {
       width: 256px; /* Set box width */
-      height: 50px; /* Adjust height for serverip box */
+      height: 256px; /* Set box height */
       background-color: #153254; /* Set box background color */
       margin: 10px; /* Add spacing between boxes */
       border-radius: 10px; /* Adjust for desired curve */
@@ -68,21 +67,15 @@
       box-shadow: 0 0 0 2px white; /* White outline on hover */
     }
 
-    .box.serverip { /* Style for serverip box */
-      background-color: #398ae6; /* Adjust background color for serverip box */
-      margin-top: 10px; /* Add space above serverip box */
-    }
-
     .box p.title {
       font-size: 1.5em; /* Adjust title font size */
-      margin-bottom: 5px; /* Reduce spacing between title and description */
+      margin-bottom: 10px; /* Add spacing between title and description */
     }
 
     .box p.description {
       font-size: 1em; /* Adjust description font size (smaller than title) */
       color: yellow; /* Set description text color to yellow */
     }
-  </
   </style>
 </head>
 <body>
@@ -93,15 +86,14 @@
       <p class="description">Essential game modifications</p>
     </div>
     <div class="box">
+      <p
+            <div class="box">
       <p class="title">Optional Mods</p>
       <p class="description">Enhance your gameplay (not required)</p>
     </div>
     <div class="box">
       <p class="title">Usage</p>
       <p class="description">Instructions on using the installer</p>
-    </div>
-    <div class="box serverip" onclick="navigator.clipboard.writeText('serverip')">
-      <p class="title">serverip</p>
     </div>
   </div>
 </body>
