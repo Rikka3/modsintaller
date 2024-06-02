@@ -7,7 +7,7 @@
   <style>
     /* Set background color */
     body {
-      background-color: #1d2052; /* Adjust background color as desired */
+      background-color: #398ae6; /* Adjust background color as desired */
       font-family: 'Minecraft', sans-serif; /* Use Minecraft font for body */
       color: #fff; /* Text color */
       display: flex; /* Enable flexbox for centering */
@@ -24,6 +24,23 @@
 
     h1 {
       font-size: 4em; /* Adjust font size as needed */
+      display: flex; /* Enable flexbox for "by Tubm" text */
+      align-items: baseline; /* Align "by Tubm" text at baseline */
+    }
+
+    .by-tubm {
+      font-size: 0.8em; /* Adjust size of "by Tubm" text */
+      margin-left: 10px; /* Add spacing between title and "by Tubm" text */
+      color: #fff; /* Initial color for "by Tubm" text */
+      animation: colorChange 5s infinite alternate ease-in-out; /* Animation for color change */
+    }
+
+    @keyframes colorChange {
+      0% { color: #fff; } /* Start with white */
+      25% { color: #398ae6; } /* Change to background color at 25% */
+      50% { color: #f0f8ff; } /* Change to light blue at 50% */
+      75% { color: #153254; } /* Change to box background color at 75% */
+      100% { color: #fff; } /* Back to white at 100% */
     }
 
     .box-container {
@@ -62,7 +79,7 @@
   </style>
 </head>
 <body>
-  <h1>Mods Installer</h1>
+  <h1>Mods Installer <span class="by-tubm">by Tubm</span></h1>
   <div class="box-container">
     <div class="box">
       <p class="title">Mods</p>
@@ -79,4 +96,3 @@
   </div>
 </body>
 </html>
-
