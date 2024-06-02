@@ -46,11 +46,12 @@
     .box-container {
       display: flex; /* Enable flexbox for boxes */
       justify-content: space-between; /* Distribute boxes horizontally */
+      flex-wrap: wrap; /* Allow boxes to wrap to next line if needed */
     }
 
     .box {
       width: 256px; /* Set box width */
-      height: 256px; /* Set box height */
+      height: 50px; /* Adjust height for serverip box */
       background-color: #153254; /* Set box background color */
       margin: 10px; /* Add spacing between boxes */
       border-radius: 10px; /* Adjust for desired curve */
@@ -65,6 +66,10 @@
 
     .box:hover {
       box-shadow: 0 0 0 2px white; /* White outline on hover */
+    }
+
+    .box.serverip { /* Style for serverip box */
+      background-color: #398ae6; /* Adjust background color for serverip box */
     }
 
     .box p.title {
@@ -92,6 +97,9 @@
     <div class="box">
       <p class="title">Usage</p>
       <p class="description">Instructions on using the installer</p>
+    </div>
+    <div class="box serverip" onclick="navigator.clipboard.writeText('serverip')">
+      <p class="title">serverip</p>
     </div>
   </div>
 </body>
