@@ -114,23 +114,28 @@
     <p>serverip</p>
   </div>
   <script>
-    const sidemods = document.querySelector('.sidemods');
-
-usageBox.addEventListener('click', function() {
-  window.location.href = "https://github.com/Rikka3/modsintaller/releases";
-});
+    // Event listener for "Mods" box (class: .manmods)
     const manmods = document.querySelector('.manmods');
-
-usageBox.addEventListener('click', function() {
-  window.location.href = "https://github.com/Rikka3/modsintaller/releases";
-});
-    const usageBox = document.querySelector('.usage-box');
-
-usageBox.addEventListener('click', function() {
-  window.location.href = "https://github.com/Rikka3/modsintaller/wiki";
-});
-    const serverIpBox = document.querySelector('.server-ip-box');
+    manmods.addEventListener('click', function() {
+      // Add your desired action for clicking the "Mods" box here (e.g., open a download link)
+      console.log("Mods box clicked!"); // Placeholder action for now
+    });
   
+    // Event listener for "Optional Mods" box (class: .sidemods)
+    const sidemods = document.querySelector('.sidemods');
+    sidemods.addEventListener('click', function() {
+      // Add your desired action for clicking the "Optional Mods" box here
+      console.log("Optional Mods box clicked!"); // Placeholder action for now
+    });
+  
+    // Event listener for "Usage" box (class: .usage-box) - remains unchanged
+    const usageBox = document.querySelector('.usage-box');
+    usageBox.addEventListener('click', function() {
+      window.location.href = "https://github.com/Rikka3/modsintaller/wiki";
+    });
+  
+    // Event listener for "server-ip-box" (class: .server-ip-box) - add semicolon
+    const serverIpBox = document.querySelector('.server-ip-box');
     serverIpBox.addEventListener('click', function() {
       navigator.clipboard.writeText('serverip')
         .then(() => {
